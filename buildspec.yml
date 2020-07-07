@@ -9,10 +9,10 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
-      -IMAGE_REPO_NAME=iris-model
-      -IMAGE_TAG=latest
-      -AWS_DEFAULT_REGION=us-east-1
-      -AWS_ACCOUNT_ID=149390516555
+      - IMAGE_REPO_NAME=iris-model
+      - IMAGE_TAG=latest
+      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_ACCOUNT_ID=149390516555
   build:
     commands:
       - echo Build started on `date`
